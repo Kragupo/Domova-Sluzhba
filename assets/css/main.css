@@ -1,0 +1,161 @@
+/* Стилізація для WebKit-браузерів (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #005599;
+    border-radius: 5px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #003366;
+}
+
+/* Для Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #343a40 #f1f1f1;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+header {
+    position: relative;
+    background: linear-gradient(135deg, #003366, #005599);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+header img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    max-width: 200px;
+    height: auto;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0 0 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+nav button {
+    background: #ffc107;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: .2s;
+}
+
+nav button:hover {
+    background: #e0a800;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #003366;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #005599;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #444;
+}
+
+section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section ul li {
+    background: #ffffff;
+    margin-bottom: 12px;
+    padding: 12px 16px;
+    border-left: 5px solid #005599;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s;
+}
+
+section ul li:hover {
+    background: #f0f8ff;
+}
+
+.services,
+.team,
+.benefits {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px -10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: #004085;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
