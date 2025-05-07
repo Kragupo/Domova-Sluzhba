@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 /* Стилізація для WebKit-браузерів (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
@@ -33,16 +39,16 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #2e2e2e;
-    background-color: #f9f9f9;
+    color: #f8eed0;
+    background-color: #122b46;
     margin: 0;
     padding: 0;
 }
 
 header {
     position: relative;
-    background: linear-gradient(135deg, #003366, #005599);
-    color: white;
+    background: linear-gradient(135deg, #122b46, #005599);
+    color: #f8eed0;
     padding: 60px 20px;
     text-align: center;
     overflow: hidden;
@@ -68,17 +74,19 @@ header p {
 }
 
 nav button, form button {
-    background: #ffc107;
+    background: #f37c1a;
     border: none;
-    border-radius: 2px;
+    border-radius: 10px;
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
     transition: .2s;
+    color: #f8eed0;
+    text-transform: uppercase;
 }
 
 nav button:hover {
-    background: #e0a800;
+    background: #da7627;
 }
 
 .subtitle {
@@ -96,16 +104,14 @@ section {
 section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #003366;
     position: relative;
     padding-bottom: 10px;
-    border-bottom: 2px solid #005599;
+    border-bottom: 2px solid #f8eed0;
 }
 
 section p {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #444;
 }
 
 section ul {
@@ -117,7 +123,7 @@ section ul li {
     background: #ffffff;
     margin-bottom: 12px;
     padding: 12px 16px;
-    border-left: 5px solid #005599;
+    border-left: 5px solid #1d3854;
     border-radius: 6px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
     transition: background 0.3s;
@@ -146,7 +152,7 @@ section ul li:hover {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    background-color: #f0f6ff;
+    background-color: #1d3854;
     border-radius: 16px;
     padding: 1.5rem;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
@@ -172,15 +178,17 @@ section ul li:hover {
     margin-top: auto;
     align-self: start;
     padding: 0.5rem 1rem;
-    background: #ffc107;
-    color: #000;
+    background: #f37c1a;
+    color: #f8eed0;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 10px;
     transition: .2s;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 .card a:hover, .asimple:hover {
-    background: #e0a800;
+    background: #da7627;
 }
 
 .grid {
@@ -259,7 +267,7 @@ section ul li:hover {
 }
 
 .contact-form {
-    background: white;
+    background: #1d3854;
     padding: 20px;
     border-radius: 10px;
 }
@@ -270,13 +278,17 @@ form textarea {
     padding: 10px;
     margin: 10px -10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #f8eed0;
 }
 
 footer {
-    background: #343a40;
-    color: white;
+    background: #1d3854;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+}
+
+.phoneNumberLink {
+    color: #f37c1a;
+    text-decoration: none;
 }
