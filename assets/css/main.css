@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter-Regular.woff2') format('woff2');
+    src: url('../fonts/Manrope/Manrope-Medium.ttf') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
@@ -12,25 +12,25 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #122b46;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #005599;
+    background: #f37c1a;
     border-radius: 5px;
-    border: 2px solid #f1f1f1;
+    border: 2px solid #122b46;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #003366;
+    background: #f37c1a;
 }
 
 /* Для Firefox */
 * {
     scroll-behavior: smooth;
     scrollbar-width: thin;
-    scrollbar-color: #343a40 #f1f1f1;
+    scrollbar-color: #f37c1a #122b46;
     box-sizing: border-box;
 }
 
@@ -45,18 +45,18 @@ body {
     padding: 0;
 }
 
-.header_container{
+.header_container {
     display: flex;
-    flex-direction: row; /* гарантує один рядок */
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 4rem 2rem;
     gap: 3rem;
-    flex-wrap: nowrap; /* ❗ важливо: не дозволяє переноситись */
+    flex-wrap: nowrap;
     animation: fadeIn 1.2s ease-in-out both;
 }
 
-.header_container > div:first-child {
+.header_container>div:first-child {
     flex: 1;
     animation: slideInLeft 1s ease-out both;
 }
@@ -77,9 +77,7 @@ body {
     color: #f8eed0cc;
 }
 
-
-
-.header_container > div:last-child {
+.header_container>div:last-child {
     flex: 1;
     text-align: center;
     animation: slideInRight 1s ease-out both;
@@ -89,35 +87,39 @@ body {
     max-width: 50%;
     height: auto;
 }
-.header_container .img_container{
+
+.header_container .img_container {
     display: flex;
     justify-content: flex-end;
     flex: 1;
 }
+
 @media (max-width: 1021px) {
     .header_container img {
         max-width: 60%;
     }
 }
+
 @media (max-width: 935px) {
     .header_container img {
         max-width: 70%;
     }
 }
-/* Адаптив */
+
 @media (max-width: 838px) {
     .container {
         flex-direction: column;
         text-align: center;
     }
 
-    .header_container > div {
+    .header_container>div {
         width: 100%;
     }
 
     .header_container h1 {
         font-size: 2.2rem;
     }
+
     .header_container img {
         max-width: 0;
     }
@@ -130,6 +132,7 @@ body {
         opacity: 0;
         transform: translateX(-50px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -141,6 +144,7 @@ body {
         opacity: 0;
         transform: translateX(50px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -148,12 +152,19 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-nav button, form button {
+nav button,
+form button {
     padding: 0.75rem 2rem;
+    margin-top: 10px;
     background: #f37c1a;
     border: none;
     border-radius: 10px;
@@ -165,7 +176,8 @@ nav button, form button {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-nav button:hover, form button:hover {
+nav button:hover,
+form button:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 15px rgba(243, 124, 26, 0.3);
 }
@@ -228,6 +240,45 @@ section ul li:hover {
     padding: 0 1rem;
 }
 
+.bigCard {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background: #1d3854;
+}
+
+.leftImg {
+    flex-direction: row;
+}
+
+.rightImg {
+    flex-direction: row-reverse;
+}
+
+.bigCard img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.cardText {
+    flex: 1;
+    font-size: 1.2rem;
+}
+
+.cardText h3 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -255,7 +306,8 @@ section ul li:hover {
     flex-grow: 1;
 }
 
-.card a, .asimple {
+.card a,
+.asimple {
     margin-top: auto;
     align-self: start;
     padding: 0.5rem 1rem;
@@ -268,7 +320,15 @@ section ul li:hover {
     font-size: 12px;
 }
 
-.card a:hover, .asimple:hover {
+@media (max-width: 768px) {
+    .card a,
+    .asimple {
+        margin: auto;
+    }
+}
+
+.card a:hover,
+.asimple:hover {
     background: #da7627;
 }
 
@@ -328,7 +388,6 @@ section ul li:hover {
     }
 }
 
-/* Адаптація для мобільних */
 @media (max-width: 768px) {
     .call-button {
         width: 50px;
@@ -357,7 +416,7 @@ form input,
 form textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px -10px;
+    margin: 10px 0px;
     border-radius: 5px;
     border: 1px solid #f8eed0;
 }
