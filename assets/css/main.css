@@ -419,6 +419,8 @@ form textarea {
     margin: 10px 0px;
     border-radius: 5px;
     border: 1px solid #f8eed0;
+    background-color: #1d3854;
+    color: white;
 }
 
 footer {
@@ -431,4 +433,8 @@ footer {
 .phoneNumberLink {
     color: #f37c1a;
     text-decoration: none;
+}
+
+.test button {
+    align-content: center
 }
