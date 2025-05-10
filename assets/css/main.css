@@ -323,6 +323,15 @@ section ul li:hover {
     color: #ff0;
 }
 
+.card-info {
+    flex-direction: column;
+    display: flex;
+}
+
+.review-name {
+    margin-top: 15px;
+}
+
 .card a,
 .asimple {
     margin-top: auto;
