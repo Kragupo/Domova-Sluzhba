@@ -321,6 +321,7 @@ section ul li:hover {
 }
 
 @media (max-width: 768px) {
+
     .card a,
     .asimple {
         margin: auto;
@@ -330,6 +331,14 @@ section ul li:hover {
 .card a:hover,
 .asimple:hover {
     background: #da7627;
+}
+
+.reviewImg {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    border-radius: 100%;
+    object-fit: cover;
 }
 
 .grid {
@@ -427,7 +436,7 @@ footer {
     background: #1d3854;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    width: 100%;
 }
 
 .phoneNumberLink {
