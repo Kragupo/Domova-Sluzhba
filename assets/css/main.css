@@ -306,6 +306,23 @@ section ul li:hover {
     flex-grow: 1;
 }
 
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.star {
+    color: gold;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.star:hover {
+    color: #ff0;
+}
+
 .card a,
 .asimple {
     margin-top: auto;
