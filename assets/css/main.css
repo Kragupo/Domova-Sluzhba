@@ -84,7 +84,7 @@ body {
 }
 
 .header_container img {
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
 }
 
@@ -96,13 +96,13 @@ body {
 
 @media (max-width: 1021px) {
     .header_container img {
-        max-width: 60%;
+        max-width: 80%;
     }
 }
 
 @media (max-width: 935px) {
     .header_container img {
-        max-width: 70%;
+        max-width: 100%;
     }
 }
 
@@ -291,7 +291,7 @@ section ul li:hover {
     transition: 0.3s;
 }
 
-.card:hover {
+.card:hover, .review-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 16px rgba(0, 0, 0, 0.08);
 }
@@ -310,8 +310,7 @@ section ul li:hover {
     display: flex;
     justify-content: center;
     gap: 4px;
-    font-size: 2rem;
-    margin: auto;
+    font-size: 1.2rem;
 }
 
 .star {
@@ -329,7 +328,28 @@ section ul li:hover {
 }
 
 .review-name {
-    margin-top: 15px;
+    align-self: flex-end;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.review-card {
+    display: flex;
+    gap: 24px;
+    background-color: #1d3854;
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 700px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+
+.review-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: start;
 }
 
 .card a,
@@ -346,6 +366,12 @@ section ul li:hover {
     font-size: 12px;
 }
 
+.card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
 
     .card a,
@@ -359,12 +385,18 @@ section ul li:hover {
     background: #da7627;
 }
 
-.reviewImg {
-    width: 100%;
-    max-width: 100px;
-    height: auto;
-    border-radius: 100%;
+.review-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     object-fit: cover;
+}
+
+.card-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .grid {

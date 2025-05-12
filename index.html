@@ -22,7 +22,7 @@
                 </nav>
             </div>
             <div class="img_container">
-                <img src="assets/images/man.png" alt="Man Icon">
+                <img src="assets/images/Final-logo_icon.png" alt="Man Icon">
             </div>
         </div>
     </header>
@@ -139,53 +139,65 @@
     <div class="container">
         <h2>Відгуки</h2>
         <div class="grid">
-            <div class="card">
-                <div style="display: flex; justify-content: space-around;">
-                    <img src="assets/images/thispersondoesnotexist1.jpg" alt="Customer Image" class="reviewImg">
-                    <div class="card-info">
-                        <span class="review-name">Андрій Коваленко</span>
-                        <div class="star-rating">
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                        </div>
+            <div class=" review-card">
+                <div class="card-left">
+                    <img src="assets/images/thispersondoesnotexist1.jpg" alt="Customer Image" class="review-img">
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
                     </div>
                 </div>
-                <p style="flex-grow: 0;">Справжні майстри. Видно що працюють люди з досвідом і відповідальністю. Робота виконана якісно і вчасно. Дуже вдячний.</p>
+
+                <!-- Права частина: відгук і ім’я -->
+                <div class="card-right">
+                    <p class="review-text">
+                        Справжні майстри. Видно що працюють люди з досвідом і відповідальністю. Робота виконана якісно і вчасно. Дуже вдячний.
+                    </p>
+                    <span class="review-name">Андрій Коваленко</span>
+                </div>
             </div>
-            <div class="card">
-                <div style="display: flex; justify-content: space-around;">
-                    <img src="assets/images/thispersondoesnotexist3.jpg" alt="Customer Image" class="reviewImg">
-                    <div class="card-info">
-                        <span class="review-name">Ігор Лисенко</span>
-                        <div class="star-rating">
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                        </div>
+            <div class=" review-card">
+                <div class="card-left">
+                    <img src="assets/images/thispersondoesnotexist2.jpg" alt="Customer Image" class="review-img">
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
                     </div>
                 </div>
-                <p style="flex-grow: 0;">Надійна служба, якій можна довірити свій дім. Чітко, акуратно і по-людськи. Повага таким працівникам!</p>
+
+                <!-- Права частина: відгук і ім’я -->
+                <div class="card-right">
+                    <p class="review-text">
+                        Справжні майстри. Видно що працюють люди з досвідом і відповідальністю. Робота виконана якісно і вчасно. Дуже вдячний.
+                    </p>
+                    <span class="review-name">Олена Ткачук</span>
+                </div>
             </div>
-            <div class="card">
-                <div style="display: flex; justify-content: space-around;">
-                    <img src="assets/images/thispersondoesnotexist2.jpg" alt="Customer Image" class="reviewImg">
-                    <div class="card-info">
-                        <span class="review-name">Олена Ткачук</span>
-                        <div class="star-rating">
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                        </div>
+            <div class=" review-card">
+                <div class="card-left">
+                    <img src="assets/images/thispersondoesnotexist3.jpg" alt="Customer Image" class="review-img">
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
                     </div>
                 </div>
-                <p style="flex-grow: 0;">Приємно здивована сервісом. Ветерани — не просто фахівці, а й надзвичайно людяні. Зробили все з турботою, як для себе 😊</p>
+
+                <!-- Права частина: відгук і ім’я -->
+                <div class="card-right">
+                    <p class="review-text">
+                        Приємно здивована сервісом. Ветерани — не просто фахівці, а й надзвичайно людяні. Зробили все з турботою, як для себе 😊
+                    </p>
+                    <span class="review-name">Ігор Лисенко</span>
+                </div>
             </div>
         </div>
     </div>
@@ -193,10 +205,18 @@
     <section id="contact">
         <h2>Контакти</h2>
         <div class="contact-form">
-            <form>
-                <input type="text" placeholder="Ваше ім’я" required>
-                <input type="tel" placeholder="Телефон" required>
-                <textarea placeholder="Яку послугу ви шукаєте?" required style="resize: vertical;"></textarea>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Ваше ім’я" required>
+                <input
+                        type="tel"
+                        name="phone"
+                        placeholder="+380 XX XXX XX XX"
+                        pattern="^\+380\d{9}$"
+                        title="Введіть номер у форматі +380XXXXXXXXX"
+                        required
+                        oninput="formatPhoneNumber(this)"
+                >
+                <textarea name="service" placeholder="Яку послугу ви шукаєте?" required style="resize: vertical;"></textarea>
                 <button type="submit">Надіслати заявку</button>
             </form>
             <p>Або зв'яжіться з нами:</p>
@@ -217,5 +237,5 @@
         <p>© 2025 Домова Служба Руками Ветеранів</p>
     </footer>
 </body>
-
+<script src="assets/js/main.js"></script>
 </html>
