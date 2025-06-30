@@ -11,7 +11,7 @@ form.addEventListener('submit', function(e) {
     formData.append("phone", phone);
     formData.append("service", service);
 
-    fetch("https://script.google.com/macros/s/AKfycbzuT07yIUQmX1NuM-i_s2hImXuONsAQJe31sAC938R6uE1N9VxNqDg6uA5m_wKMxq3S/exec", {
+    fetch("", {
         method: "POST",
         body: formData,
         mode: 'no-cors'
