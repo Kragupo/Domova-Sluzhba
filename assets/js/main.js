@@ -1,3 +1,11 @@
+window.addEventListener('load', function() {
+	document.getElementById('preloader').classList.add('hide');
+  
+	setTimeout(function() {
+		document.getElementById('preloader').style.display = 'none';
+	}, 500);
+});
+
 const form = document.getElementById('contactForm');
 
 form.addEventListener('submit', function(e) {
