@@ -121,7 +121,7 @@ body {
     }
 
     .header_container img {
-        max-width: 0;
+        display: none;
     }
 
     .header_container .img_container {
