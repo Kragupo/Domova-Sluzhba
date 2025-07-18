@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ae668f1-f31e-42c7-a80b-91057aa59823" name="Changes" comment="v 1.7 new stylization of review, send order to google sheets and tg, new logo on banner">
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Uamixerz"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Kragupo/Domova-Sluzhba/",
+    "accountId": "48b2039b-905d-4106-9663-b9c50f890b68"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2wkvhXrwppV274wnAyLiOGno0F6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.index.html.executor": "Run",
+    "Node.js.main.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/My/NetSpireTeam/VetForce Logistics",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\My\LNTU\HomeService\Domova-Sluzhba\assets\images" />
+      <recent name="D:\My\LNTU\HomeService\Domova-Sluzhba\assets\fonts" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ae668f1-f31e-42c7-a80b-91057aa59823" name="Changes" comment="" />
+      <created>1746598505942</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746598505942</updated>
+      <workItem from="1746598507051" duration="705000" />
+      <workItem from="1746644579954" duration="5736000" />
+      <workItem from="1747044924644" duration="11965000" />
+      <workItem from="1747646150672" duration="1076000" />
+      <workItem from="1747987292434" duration="2363000" />
+      <workItem from="1752863756072" duration="6840000" />
+    </task>
+    <task id="LOCAL-00001" summary="v 1.3 Settings standard colors">
+      <option name="closed" value="true" />
+      <created>1746647106656</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746647106656</updated>
+    </task>
+    <task id="LOCAL-00002" summary="v 1.4 Style for header with animation and adaptation">
+      <option name="closed" value="true" />
+      <created>1746649313182</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746649313182</updated>
+    </task>
+    <task id="LOCAL-00003" summary="v 1.7 new stylization of review, send order to google sheets and tg, new logo on banner">
+      <option name="closed" value="true" />
+      <created>1747056063154</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747056063154</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v 1.3 Settings standard colors" />
+    <MESSAGE value="v 1.4 Style for header with animation and adaptation" />
+    <MESSAGE value="v 1.7 new stylization of review, send order to google sheets and tg, new logo on banner" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 1.7 new stylization of review, send order to google sheets and tg, new logo on banner" />
+  </component>
+</project>

@@ -359,6 +359,8 @@ section ul li:hover {
     align-self: flex-end;
     margin-top: 10px;
     font-weight: bold;
+    width: 100%;
+    text-align: center;
 }
 
 .review-card {
@@ -377,7 +379,7 @@ section ul li:hover {
     margin: 0;
     font-size: 16px;
     line-height: 1.4;
-    text-align: start;
+    text-align: center;
 }
 
 .card a,
@@ -398,6 +400,8 @@ section ul li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 30%;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -424,7 +428,7 @@ section ul li:hover {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .grid {
@@ -531,4 +535,135 @@ footer {
     display: inline-flex;
     align-items: center;
     gap: 6px;
+}
+
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Модальне вікно */
+.modal {
+    background-color: #0f2a3a; /* темний фон */
+    border-radius: 16px;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-in-out;
+    position: relative;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Анімація появи */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 26px;
+    color: #ffffffaa;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.close-btn:hover {
+    color: #ffffff;
+}
+
+.feedback-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px 14px;
+    margin-bottom: 15px;
+    background-color: #163b4d;
+    border: 1px solid #1f4e61;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.feedback-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.feedback-form button {
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.feedback-form button:hover {
+    background-color: #e86f00;
+}
+
+/* Зірки */
+.star-select {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+.star-select .star {
+    font-size: 24px;
+    color: #cccccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.star-select .star.selected {
+    color: #f5c167;
+}
+.review-header{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.open-modal-btn {
+    background-color: #ff7b00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.open-modal-btn:hover {
+    background-color: #e86f00;
+}
+.modal-review-status{
+    text-align: center;
+}
+
+.grecaptcha-badge {
+    top: 10px !important;
+    z-index: 9999 !important;
+    opacity: 0.3;
+    transition: opacity 0.2s ease;
 }
